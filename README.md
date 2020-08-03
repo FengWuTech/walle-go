@@ -9,3 +9,9 @@ Walle-Go
 1. 下载代码
 1. 安装后端依赖 `go mod download` ，从配置模版 `conf/conf.yaml.template` 复制出 `conf/conf.yaml`，修改为真实可用的配置，启动后端服务 `go run main.go` ， API接口和socket.io服务默认都运行在 `5000` 端口。
 1. 安装前端依赖
+
+```
+cd www/
+npm i
+npm run dev
+```
