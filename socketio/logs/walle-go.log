@@ -1,1 +1,0 @@
-{"level":"fatal","ts":"2020-05-11T18:10:30.118+0800","caller":"models/models.go:29","msg":"models.Setup err: Error 1045: Access denied for user ''@'localhost' (using password: NO)","pid":57217,"process":"___TestWebSocketIO_onBranches_in_walle_go_socketio"}
