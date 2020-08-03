@@ -15,3 +15,19 @@ cd www/
 npm i
 npm run dev
 ```
+1. 修改www前端项目目录下，vue.config.js 文件，修改成后端接口！
+```
+proxy: {
+      '/walle/': {
+        target: 'http://127.0.0.1:5000/',
+        ws: true,
+        changeOrigin: true,
+        onProxyReq (proxyReq, req, res) {
+          const cookie = req.headers['cookie']
+          if (cookie) {
+            proxyReq.setHeader('cookie', cookie)
+          }
+        },
+        onProxyRes (proxyRes, req, res) {}
+      },
+```
