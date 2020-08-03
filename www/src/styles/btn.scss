@@ -1,0 +1,77 @@
+@keyframes level_1 {
+  from { background-color: #FA5151; border-color: #FA5151;box-shadow: 0 0 9px rgba(255,81,81,0.3); }
+  50% { background-color: #E03737; border-color: #E03737; box-shadow: 0 0 18px #E03737; }
+  to { background-color: #FA5151; border-color: #FA5151; box-shadow: 0 0 9px rgba(255,81,81,0.3); }
+}
+@keyframes level_2 {
+  from { background-color: #FF884C; border-color: #FF884C;box-shadow: 0 0 9px rgba(255,136,76,0.3); }
+  50% { background-color: #E97722; border-color: #E97722; box-shadow: 0 0 18px #E97722; }
+  to { background-color: #FF884C; border-color: #FF884C; box-shadow: 0 0 9px rgba(255,136,76,0.3); }
+}
+@keyframes level_3 {
+  from { background-color: #FFCD43; border-color: #FFCD43;box-shadow: 0 0 9px rgba(255,205,67,0.3); }
+  50% { background-color: #EFBE35; border-color: #EFBE35; box-shadow: 0 0 18px #EFBE35; }
+  to { background-color: #FFCD43; border-color: #FFCD43; box-shadow: 0 0 9px rgba(255,205,67,0.3); }
+}
+
+.level-1.button-level {
+  animation-name: level_1;
+  animation-duration: 1s;
+}
+.level-2.button-level {
+  animation-name: level_2;
+  animation-duration: 1s;
+}
+.level-3.button-level {
+  animation-name: level_3;
+  animation-duration: 1s;
+}
+.button-level {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes am_level_1{
+  @for $i from 0 through 29 {
+    #{$i * 3.445%} {background-image: url('~@/assets/animation/level-1/00#{$i}.png');}
+  }
+}
+@keyframes am_level_2{
+  @for $i from 0 through 29 {
+    #{$i * 3.445%} {background-image: url('~@/assets/animation/level-2/00#{$i}.png');}
+  }
+}
+
+@keyframes am_level_3{
+  @for $i from 0 through 29 {
+    #{$i * 3.445%} {background-image: url('~@/assets/animation/level-3/00#{$i}.png');}
+  }
+}
+
+.am{
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  animation-iteration-count: infinite;/* 动画无限播放 */
+  animation-timing-function: step-start;/* 马上跳到动画每一结束桢的状态 */
+}
+
+.am.am-level-1{
+  margin-right: 10px;
+  color: rgb(250, 81, 81);
+  animation-name: am_level_1;
+  animation-duration: 968ms;
+}
+.am.am-level-2{
+  margin-right: 10px;
+  color: rgb(250, 81, 81);
+  animation-name: am_level_2;
+  animation-duration: 968ms;
+}
+.am.am-level-3{
+  margin-right: 10px;
+  color: rgb(250, 81, 81);
+  animation-name: am_level_3;
+  animation-duration: 968ms;
+}
