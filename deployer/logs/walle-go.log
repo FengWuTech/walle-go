@@ -1,0 +1,2 @@
+{"level":"fatal","ts":"2020-05-08T17:39:24.914+0800","caller":"models/models.go:26","msg":"models.Setup err: sql: unknown driver \"mysql\" (forgotten import?)","pid":13142,"process":"___TestDeployer_WalleDeploy_in_walle_go_deployer"}
+{"level":"fatal","ts":"2020-05-08T17:40:18.213+0800","caller":"models/models.go:28","msg":"models.Setup err: Error 1045: Access denied for user ''@'localhost' (using password: NO)","pid":13171,"process":"___TestDeployer_WalleDeploy_in_walle_go_deployer"}

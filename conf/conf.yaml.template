@@ -1,0 +1,6 @@
+db: "root:root@tcp(127.0.0.1)/walle?charset=utf8mb4&parseTime=True&loc=Local&timeout=10s"
+mail:
+  user: 1111@aiforward.com
+  password: abc
+  host: smtp.exmail.qq.com
+  port: 465
