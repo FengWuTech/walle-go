@@ -1,7 +1,7 @@
 Walle-Go
 ========
 
-鉴于python版本的 [walle-web](https://github.com/meolu/walle-web) 不再更新，我们有使用其功能的需求，就使用golang对其进行了重写，确保了基本功能的可以，并对前端UI进行有优化。
+鉴于python版本的 [walle-web](https://github.com/meolu/walle-web) 不再更新，我们有使用其功能的强烈需求，就使用golang进行了重写，确保了项目基本功能可用性，并对前端UI进行了优化。
 
 如何跑起来？
 ---------
