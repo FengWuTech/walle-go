@@ -1,0 +1,11 @@
+.idea
+.vscode
+*.log
+*.swp
+runtime
+
+.DS_Store
+__debug_bin
+*.yaml
+!*.yaml.template
+logs/
