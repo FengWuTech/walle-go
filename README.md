@@ -19,32 +19,31 @@ Walle-Go
 1. 从配置模版 `conf/conf.yaml.template` 复制出 `conf/conf.yaml`，修改为真实可用的配置，用 `models/walle.sql` 创建数据表。
 1. 安装后端依赖 `go mod download` ，启动后端服务 `go run main.go` ， API接口和socket.io服务默认都运行在 `5000` 端口。
 1. 安装前端依赖
-      ```
-          cd www/
-           npm i  
-      ```
+```
+cd www/
+npm i  
+```
 1. 修改www前端项目目录下，vue.config.js 文件，修改api接口
-      ```
-      proxy: {
-            '/walle/': {
-              target: 'http://127.0.0.1:5000/',
-              ws: true,
-              changeOrigin: true,
-              onProxyReq (proxyReq, req, res) {
-                const cookie = req.headers['cookie']
-                if (cookie) {
-                  proxyReq.setHeader('cookie', cookie)
-                }
-              },
-              onProxyRes (proxyRes, req, res) {}
-            },
-      ```
+```
+proxy: {
+    '/walle/': {
+      target: 'http://127.0.0.1:5000/',
+      ws: true,
+      changeOrigin: true,
+      onProxyReq (proxyReq, req, res) {
+	const cookie = req.headers['cookie']
+	if (cookie) {
+	  proxyReq.setHeader('cookie', cookie)
+	}
+      },
+      onProxyRes (proxyRes, req, res) {}
+    },
+```
 1. 启动前端服务
-      ```
-      npm run dev
-      ```
+```
+npm run dev
+```
       
 系统截图
 ---------
-
-
+![截图1](www/public/images/screenshot1.png)
