@@ -321,5 +321,9 @@ func  (r *Repo)Commits(branch string) []map[string]interface{} {
 	})
 	CheckIfError(err)
 
-	return commitList[:20]
+	maxLen := 20
+	if len(commitList) < maxLen {
+		maxLen = len(commitList)
+	}
+	return commitList[:maxLen]
 }
